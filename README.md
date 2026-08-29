@@ -1,5 +1,33 @@
 # Plus PayPal 0 元提链控制台 (ChatGPT 提取支付链接)
 
+<p align="center">
+  <img src="docs/assets/readme-banner.svg" alt="Repository overview banner" width="100%" />
+</p>
+
+<p align="center">
+  <img alt="Runtime" src="https://img.shields.io/badge/Runtime-Python_3.10+-3776AB?style=flat-square&logo=python" />
+  <img alt="Gateway" src="https://img.shields.io/badge/Gateway-Go-00ADD8?style=flat-square&logo=go" />
+  <img alt="UI" src="https://img.shields.io/badge/UI-Local_web_console-2563EB?style=flat-square" />
+  <img alt="Scope" src="https://img.shields.io/badge/Scope-Research_use-64748B?style=flat-square" />
+</p>
+
+<p align="center"><a href="#-项目简介">项目简介</a> · <a href="#-快速开始">快速开始</a> · <a href="#-环境变量说明">配置</a> · <a href="#-单元测试">验证</a></p>
+
+## 一眼看懂
+
+| 路径 | 入口与用途 |
+| --- | --- |
+| 一键启动 | Linux/macOS 使用 `start.sh`，Windows 使用 `start.bat` |
+| Python 网关 | `webapp/server.py`，默认本地端口 `8888` |
+| Go 网关 | `cmd/ppgateway/main.go`，示例监听端口 `8787` |
+| Web 前端 | `webapp/static/` |
+| 离线验证 | `python3 -m unittest discover -s tests -v` |
+
+> 先阅读下方项目简介、环境变量与免责声明，再选择 Python 或 Go 入口；两个入口服务于不同运行规模。
+
+---
+
+
 > **💡 欢迎大家提交 Pull Request / Issue，共同共建与完善本项目！**
 > 
 > 💬 **技术交流 QQ 群**：**808987383**（入群欢迎共同探讨协议与支付安全技术）
